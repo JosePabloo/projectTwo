@@ -140,21 +140,168 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
+          <!-- This should link to the calendar -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Add Classes</h1>
-            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Done! </a>
+            <h1 class="h3 mb-0 text-gray-800">Create Class List</h1>
+            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-table fa-sm text-white-50"></i> Calendar </a>
           </div>
 
 
 
 
 
-          <!-- ADD FORM HERE! PAGE 1 -->
+            <!-- FORM! PAGE 1 -->
+
+            <form method="POST" action="/post-feedback">
+
+                <!-- Input Course Number -->
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1"> Course #: </span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="example: &quot CSC 495 &quot" aria-label="Course Number" aria-describedby="basic-addon1">
+                </div>
+                
+                <!-- Input Course Number -->
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1"> Course Name: </span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="example: &quot Human Computer Interactions &quot" aria-label="Course Name" aria-describedby="basic-addon1">
+                </div>
+        
+                <!-- Choose when the class meets (weekday)-->
+                <p id="chooseWeekday" class="form-text text-muted">What days of the week does this class meet?</p>
+                <div class="container">
+                    <div class="row">
+                        <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off">
+                            Monday
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off">
+                            Tuesday
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off">
+                            Wednesday
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off">
+                            Thursday
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off">
+                            Friday
+                        </button>
+                    </div>
+                </div>
+                <br>
+                <!-- (Optional: weekend)-->
+                <div class="container">
+                    <div class="row">
+                        <small id="optionalWeekend" class="form-text text-muted">(optional)</small>
+                        <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off">
+                            Saturday
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off">
+                            Sunday
+                        </button>
+                    </div>
+                </div>
+                <br>
+
+                <!-- Choose class priority-->
+                <p id="choosePriority" class="form-text text-muted">Choose priority: How important is taking this class?</p>
+                <div class="container">
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-outline-secondary">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked> Low
+                        </label>
+                        <label class="btn btn-outline-secondary active">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> Neutral
+                        </label>
+                        <label class="btn btn-outline-secondary">
+                            <input type="radio" name="options" id="option3" autocomplete="off"> High
+                        </label>
+                    </div>
+                </div>
+                <br>
+                <div class="row justify-content-between">
+
+
+                <!-- Choose class time -->
+                <!-- FIX COLUMN WIDTH -->
+                <p id="chooseTime" class="form-text text-muted">Choose schedule: When does this class meet?</p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                    
+                            <div class="container">
+                                <small id="MWFmessage" class="form-text text-muted">Regular Class Times:<br>Monday, Wednesday, Friday</small>
+                                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-outline-secondary">
+                                        <input type="radio" name="options" id="option1" autocomplete="off"> 8:00 - 9:10
+                                    </label>
+                                    <label class="btn btn-outline-secondary">
+                                        <input type="radio" name="options" id="option2" autocomplete="off"> 9:20 - 10:30
+                                    </label>
+                                    <label class="btn btn-outline-secondary">
+                                        <input type="radio" name="options" id="option3" autocomplete="off"> 11:10 - 12:20
+                                    </label>
+                                    <label class="btn btn-outline-secondary">
+                                        <input type="radio" name="options" id="option3" autocomplete="off"> 12:30 - 1:40
+                                    </label>
+                                    <label class="btn btn-outline-secondary">
+                                        <input type="radio" name="options" id="option3" autocomplete="off"> 1:50 - 3:00
+                                    </label>
+                                    <label class="btn btn-outline-secondary">
+                                        <input type="radio" name="options" id="option3" autocomplete="off"> 3:10 - 4:20
+                                    </label>
+                                    <label class="btn btn-outline-secondary">
+                                        <input type="radio" name="options" id="option3" autocomplete="off"> 4:30 - 5:40
+                                    </label>
+                                    <label class="btn btn-outline-secondary">
+                                        <input type="radio" name="options" id="option3" autocomplete="off"> Evening
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-auto">
+
+                            <div class="container">
+                                <small id="MWFmessage" class="form-text text-muted">Regular Class Times:<br>Tuesday, Thursday</small>
+                                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-outline-secondary">
+                                        <input type="radio" name="options" id="option1" autocomplete="off"> 7:50 - 9:30
+                                    </label>
+                                    <label class="btn btn-outline-secondary">
+                                        <input type="radio" name="options" id="option2" autocomplete="off"> 9:40 - 11:20
+                                    </label>
+                                    <label class="btn btn-outline-secondary">
+                                        <input type="radio" name="options" id="option3" autocomplete="off"> 12:00 - 1:40
+                                    </label>
+                                    <label class="btn btn-outline-secondary">
+                                        <input type="radio" name="options" id="option3" autocomplete="off"> 1:50 - 3:30
+                                    </label>
+                                    <label class="btn btn-outline-secondary">
+                                        <input type="radio" name="options" id="option3" autocomplete="off"> 3:40 - 5:20
+                                    </label>
+                                    <label class="btn btn-outline-secondary">
+                                        <input type="radio" name="options" id="option3" autocomplete="off"> Evening
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <br>
 
 
 
 
+                <!-- Submit / add this class to the sandbox -->
+                <br>                        
+                <button type="button" class="btn btn-primary">Add class to sandbox!</button>
 
+            </form>
 
 
 
@@ -172,7 +319,7 @@
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Your Website 2019</span>
+            <span>CSC 495: Human Computer Interaction<br> Augsburg University, Spring 2020</span>
           </div>
         </div>
       </footer>
