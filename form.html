@@ -59,6 +59,13 @@
           <span>View Your Schedule</span></a>
       </li>
 
+      <!-- Nav Item - Export -->
+      <li class="nav-item">
+        <a class="nav-link" href="export.html">
+          <i class="fas fa-download fa-sm text-white-50"></i>
+          <span>Export Options</span></a>
+      </li>
+
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
 
@@ -126,7 +133,7 @@
           <div class="row">
 
             <!-- Left Column -->
-            <div class="col-lg-6 mb-4">
+            <div class="col-7">
 
               <!-- Add a new class card -->
               <div class="card shadow mb-4">
@@ -209,7 +216,6 @@
 
 
                   <!-- Choose class time -->
-                  <!-- FIXME: COLUMN WIDTH -->
                   <p id="chooseTime" class="form-text text-muted">Choose schedule: When does this class meet?</p>
                   <div class="container">
                     <div class="row">
@@ -295,7 +301,7 @@
             <!-- End of Left Column -->
   
             <!-- Right Column -->
-            <div class="col-lg-6 mb-4">
+            <div class="col-5">
 
               <!-- Current List of classes Card -->
               <div class="card shadow mb-4">
@@ -306,44 +312,81 @@
 
                   <div class="container">
 
-                    <div class="row">
-                      <div class="col-3">
-                        LAT 102
-                      </div>
-                      <div class="col-4">
-                        Beginning Latin 2
-                      </div>
-                      <div class="col-">
-                        11:10 - 12:20 : MWF
-                      </div>
-                    </div>
-                    <br>
-                    <div class="row">
-                      <div class="col-3">
-                        CSC 451
-                      </div>
-                      <div class="col-4">
-                        Compilers
-                      </div>
-                      <div class="col-">
-                        1:50 - 3:30 : TTh
+                    <div class="card bg-light mb-3">
+                      <div class="card-body">
+                        <div class="col">
+                          LAT 102
+                        </div>
+                        <div class="col">
+                          Beginning Latin 2
+                        </div>
+                        <div class="col">
+                          11:10 - 12:20 : MWF
+                        </div>
+                        <div class="col">
+                          *low priority*
+                        </div>
                       </div>
                     </div>
-                    <br>
-                    <div class="row">
-                      <div class="col-3">
-                        CSC 395B
-                      </div>
-                      <div class="col-4">
-                        Real-Time Embedded Systems
-                      </div>
-                      <div class="col-">
-                        9:40 - 11:10 : TTh
+                    <!-- End card-->
+
+                    <div class="card text-white bg-dark mb-3">
+                      <div class="card-body">
+                        <div class="col">
+                          CSC 451
+                        </div>
+                        <div class="col">
+                          Compilers
+                        </div>
+                        <div class="col">
+                          1:50 - 3:30 : TTh
+                        </div>
+                        <div class="col">
+                          *high priority*
+                        </div>
                       </div>
                     </div>
+                    <!-- End card-->
+
+                    <div class="card bg-light mb-3">
+                      <div class="card-body">
+                        <div class="col">
+                          COM 111
+                        </div>
+                        <div class="col">
+                          Public Speaking
+                        </div>
+                        <div class="col">
+                          11:10 - 12:20 : MWF
+                        </div>
+                        <div class="col">
+                          *low priority*
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End card-->
+
+                    <div class="card text-white bg-secondary mb-3">
+                      <div class="card-body">
+                        <div class="col">
+                          CSC 395B
+                        </div>
+                        <div class="col">
+                          Real-Time Embedded Systems
+                        </div>
+                        <div class="col">
+                          9:40 - 11:10 : TTh
+                        </div>
+                        <div class="col">
+                          *neutral priority*
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End card-->
+                    
                     <br>
                     <div class="row">
-                      <a href= "#" class="btn btn-secondary"> Edit this class list </a>
+                      <a href= "form.h" class="btn btn-outline-secondary"> Edit this class list </a>
                     </div>
 
                   </div>
