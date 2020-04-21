@@ -2,7 +2,7 @@
   "_args": [
     [
       "@fortawesome/fontawesome-free@5.10.2",
-      "/Users/joseperales/Documents/clients/augsburg/HIC"
+      "C:\\Users\\chase\\Documents\\Augsburg\\CSC 395A - Human Computer Interaction\\projectTwo"
     ]
   ],
   "_from": "@fortawesome/fontawesome-free@5.10.2",
@@ -27,7 +27,7 @@
   ],
   "_resolved": "https://registry.npmjs.org/@fortawesome/fontawesome-free/-/fontawesome-free-5.10.2.tgz",
   "_spec": "5.10.2",
-  "_where": "/Users/joseperales/Documents/clients/augsburg/HIC",
+  "_where": "C:\\Users\\chase\\Documents\\Augsburg\\CSC 395A - Human Computer Interaction\\projectTwo",
   "author": {
     "name": "Dave Gandy",
     "email": "dave@fontawesome.com",
